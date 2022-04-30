@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+main > .page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+main > .page:not(.active) {
+  display: none;
+}
+
+/*** home ***/
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/home-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.home > div {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.home > div > h1 {
+  font-size: 5rem;
+}
+
+.home > div > h3 {
+  font-size: 1.5rem;
+}
+/*** home ***/
+
+/*** navbar ***/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #2a2e35;
+  padding: 2em 0.5em;
+}
+
+.navbar > button {
+  background-color: #444e57;
+  color: #b2becd;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(20, 20, 20, 0.3);
+  transition: 0.3s ease;
+}
+
+.navbar > button:hover {
+  background-color: #b2becd;
+  color: #454e56;
+}
+
+.navbar > button.active-btn {
+  background-color: #b2becd;
+  color: #454e56;
+}
+/*** navbar ***/
