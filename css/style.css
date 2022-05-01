@@ -83,6 +83,7 @@ main > .page {
 .about-col2 {
   text-align: justify;
   font-size: 1.2rem;
+  font-weight: 300;
   line-height: 34px;
 }
 
