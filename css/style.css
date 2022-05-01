@@ -10,13 +10,13 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 main > .page {
   min-height: 100vh;
   width: 100%;
-}
-
-main > .page:not(.active) {
-  display: none;
 }
 
 /*** home ***/
@@ -123,7 +123,7 @@ main > .page:not(.active) {
   gap: 0.7em;
 }
 
-.navbar > div > button {
+.navbar > div > a {
   background-color: #444e57;
   color: #b2becd;
   font-size: 1.6rem;
@@ -140,12 +140,12 @@ main > .page:not(.active) {
   transition: 0.3s ease;
 }
 
-.navbar > div > button:hover {
+.navbar > div > a:hover {
   background-color: #b2becd;
   color: #454e56;
 }
 
-.navbar > div > button.active-btn {
+.navbar > div > a.active-btn {
   background-color: #b2becd;
   color: #454e56;
 }
