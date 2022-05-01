@@ -151,3 +151,17 @@ main > .page {
   color: #454e56;
 }
 /*** navbar ***/
+
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #454e56;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b2becd;
+  border-radius: 20px;
+  border: 2px solid #454e56;
+}
