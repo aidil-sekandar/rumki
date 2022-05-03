@@ -21,7 +21,8 @@ main > .page {
 
 /*** home ***/
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/home-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/home-background.jpg");
   background-position: center;
   background-size: cover;
   display: grid;
@@ -88,6 +89,27 @@ main > .page {
 }
 
 /*** about ***/
+
+/*** merch ***/
+
+.merch {
+  background-color: black;
+  padding: 2em 5em 0 3em;
+}
+
+.merch > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.merch > h1:before {
+  content: "Merch";
+  position: absolute;
+  top: 35px;
+  transform: scale(1.3);
+  opacity: 25%;
+}
+/*** merch ***/
 
 /*** contact ***/
 
