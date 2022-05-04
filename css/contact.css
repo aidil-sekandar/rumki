@@ -30,26 +30,27 @@ textarea {
   width: 100%;
   font-size: 1.4rem;
   background: transparent;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #454e56;
   padding: 0.5em;
   border-radius: 2px;
-  border-bottom: 2px solid #454e56;
-}
-
-.contact-form > textarea {
-  border-bottom: 2px solid #454e56;
 }
 
 .contact-form > input,
-textarea:focus {
+textarea {
   outline: none;
 }
 
 .contact-form > button {
   background-color: #454e56;
+  font-size: 1.3rem;
   color: white;
   border: 0;
-  font-size: 1.4rem;
-  padding: 0.5em;
+  padding: 0.7em;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.contact-form > button:hover {
+  background-color: #383f46;
 }
