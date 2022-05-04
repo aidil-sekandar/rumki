@@ -66,7 +66,6 @@ main > .page {
   place-items: center;
   background: transparent;
   padding: 2em 1em 2em 0;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -90,6 +89,7 @@ main > .page {
 
 .navbar > div > a {
   background-color: #444e57;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   color: #b2becd;
   font-size: 1.6rem;
   border: none;
