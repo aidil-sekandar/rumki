@@ -1,0 +1,17 @@
+.merch {
+  background-color: black;
+  padding: 2em 5em 0 3em;
+}
+
+.merch > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.merch > h1:before {
+  content: "Merch";
+  position: absolute;
+  top: 35px;
+  transform: scale(1.3);
+  opacity: 25%;
+}

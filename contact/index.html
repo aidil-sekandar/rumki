@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
@@ -13,11 +14,16 @@
   </head>
   <body>
     <main>
-      <section class="page home">
-        <div>
-          <h1>Rumki</h1>
-          <h3>KUGIRAN ASIS</h3>
-        </div>
+      <section class="page contact">
+        <h1>Contact</h1>
+        <form class="contact-form">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea cols="30" rows="10" placeholder="Type your messages here.." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </section>
 
       <nav class="navbar">
@@ -31,6 +37,6 @@
       </nav>
     </main>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
