@@ -64,8 +64,9 @@ main > .page {
 .navbar {
   display: grid;
   place-items: center;
-  background-color: #2a2e35;
-  padding: 2em 0.5em;
+  background: transparent;
+  padding: 2em 1em 2em 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   height: 100vh;
   position: fixed;
   top: 0;
