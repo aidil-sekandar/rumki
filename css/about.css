@@ -19,7 +19,7 @@
 .about > .about-col {
   display: grid;
   column-gap: 2em;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 1em 0 3em 0;
 }
 
@@ -31,12 +31,26 @@
 .img-div > img {
   width: 100%;
   border-radius: 10px;
+  border: 2px solid rgba(97, 97, 97, 0.7);
+}
+
+.img-caption {
+  text-align: center;
+  width: 100%;
+  color: #868686;
+  margin: -10px;
 }
 
 .about > .about-col > .about-col1,
 .about-col2 {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 34px;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .about > .about-col {
+    gt
+  }
+} */
