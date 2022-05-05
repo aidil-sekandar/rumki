@@ -25,15 +25,15 @@
 }
 
 .music-card {
-  background-color: #3a3d3f;
-  border-radius: 10px;
   background-color: white;
+  border-radius: 10px;
   padding: 0.5em;
   color: black;
 }
 
 .music-cover {
   position: relative;
+  margin-bottom: 0.5em;
 }
 
 .music-cover > img {
