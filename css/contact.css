@@ -1,6 +1,6 @@
 .contact {
   background-color: black;
-  padding: 1em 4em 3em 1em;
+  padding: 1em 4em 4em 1em;
 }
 
 .contact > h1 {
@@ -56,5 +56,14 @@ textarea {
 @media only screen and (max-width: 600px) {
   .contact {
     padding-right: 1em;
+  }
+
+  .contact-form > input,
+  textarea {
+    font-size: 1.2rem;
+  }
+
+  .contact-form > button {
+    font-size: 1.2rem;
   }
 }
