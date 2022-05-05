@@ -121,7 +121,7 @@ main > .page {
 .copyright {
   background-color: black;
   color: #b2becd;
-  padding: 0 0.5rem;
+  padding: 0.3rem 0.5rem;
   font-size: 1rem;
   position: fixed;
   left: 10px;

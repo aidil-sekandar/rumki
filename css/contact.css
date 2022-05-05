@@ -36,11 +36,6 @@ textarea {
   border-radius: 2px;
 }
 
-.contact-form > input,
-textarea {
-  outline: none;
-}
-
 .contact-form > button {
   background-color: #454e56;
   font-size: 1.3rem;
