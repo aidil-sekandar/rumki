@@ -62,46 +62,33 @@ main > .page {
 
 /*** navbar ***/
 .navbar {
-  display: grid;
-  place-items: center;
-  background: transparent;
-  padding: 2em 1em 2em 0;
+  width: 4em;
   height: 100vh;
   position: fixed;
+  display: grid;
+  place-items: center;
   top: 0;
   right: 0;
-  overflow-y: scroll;
-}
-
-.navbar::-webkit-scrollbar {
-  display: none;
-}
-
-.navbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  background: transparent;
 }
 
 .navbar > div {
-  display: grid;
-  gap: 0.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .navbar > div > a {
   background-color: #444e57;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   color: #b2becd;
-  font-size: 1.6rem;
-  border: none;
-  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  padding: 0.5em;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(20, 20, 20, 0.3);
   transition: 0.3s ease;
 }
 
@@ -114,6 +101,7 @@ main > .page {
   background-color: #b2becd;
   color: #454e56;
 }
+
 /*** navbar ***/
 
 /*** copyright ***/
@@ -129,3 +117,26 @@ main > .page {
 }
 
 /*** copyright ***/
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: #191d2b;
+    inset: 0 0 0 0;
+    right: inherit;
+    top: inherit;
+    height: inherit;
+    padding: 0.5em 1em;
+    width: 100%;
+  }
+
+  .navbar > div {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+}

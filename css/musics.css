@@ -1,6 +1,6 @@
 .musics {
   background-color: black;
-  padding: 2em 5em 0 3em;
+  padding: 1em 4em 3em 1em;
 }
 
 .musics > h1 {
@@ -19,10 +19,9 @@
 .musics-card {
   max-width: 1024px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
-  padding: 1em 0 3em 0;
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
 }
 
 .music-card {
@@ -35,7 +34,6 @@
 
 .music-cover {
   position: relative;
-  margin-bottom: 0.5em;
 }
 
 .music-cover > img {
@@ -99,4 +97,10 @@ p {
 
 .ri-play-fill {
   color: #fffefe;
+}
+
+@media only screen and (max-width: 600px) {
+  .musics {
+    padding-right: 1em;
+  }
 }
