@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
   color: white;
 }
 
@@ -39,7 +38,7 @@ a {
 .page {
   min-height: 100vh;
   width: 100%;
-  padding: 1em 4em 1em 1em;
+  padding: 2em 6em 2em 1em;
   background-color: #121212;
 }
 
@@ -69,7 +68,7 @@ a {
 
 /*** navbar ***/
 .navbar {
-  width: 4em;
+  width: 6em;
   height: 100vh;
   position: fixed;
   display: grid;
@@ -84,10 +83,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.8em;
 }
 
 .navbar > div > a {
+  font-size: 1.5rem;
   background-color: #444e57;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   color: #b2becd;
@@ -126,6 +126,12 @@ a {
 
 /*** copyright ***/
 
+@media only screen and (max-width: 320px) {
+  .navbar > div > a {
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .page {
     padding-right: 1em;
@@ -137,18 +143,18 @@ a {
     right: inherit;
     top: inherit;
     height: inherit;
-    padding: 0.5em 1em;
+    padding: 1em 0;
     width: 100%;
   }
 
   .navbar > div {
     flex-direction: row;
     justify-content: center;
+    gap: 0.5em;
     width: 100%;
-    font-size: 1.4rem;
   }
 
   .copyright {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
   }
 }

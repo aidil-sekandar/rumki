@@ -6,7 +6,7 @@
 .about > h1:before {
   content: "About";
   position: absolute;
-  top: 35px;
+  top: 20px;
   transform: scale(1.3);
   opacity: 25%;
 }
@@ -39,8 +39,6 @@
 .about > .about-col > .about-col1,
 .about-col2 {
   text-align: justify;
-  font-size: 1.1rem;
-  font-weight: 300;
   line-height: 34px;
 }
 
