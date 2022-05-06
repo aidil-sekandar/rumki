@@ -36,13 +36,16 @@ a {
 
 /*** global ***/
 
-main > .page {
+.page {
   min-height: 100vh;
   width: 100%;
+  padding: 1em 4em 1em 1em;
+  background-color: #121212;
 }
 
 /*** home ***/
 .home {
+  padding: 1em 4em 0 1em;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/home-background.jpg");
   background-position: center;
   background-size: cover;
@@ -112,18 +115,22 @@ main > .page {
 /*** copyright ***/
 
 .copyright {
-  background-color: black;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444e57;
   color: #b2becd;
-  padding: 0.3rem 0.5rem;
   font-size: 1rem;
-  position: fixed;
-  left: 10px;
-  bottom: 0;
 }
 
 /*** copyright ***/
 
 @media only screen and (max-width: 600px) {
+  .page {
+    padding-right: 1em;
+  }
+
   .navbar {
     background-color: #191d2b;
     inset: 0 0 0 0;
@@ -142,6 +149,6 @@ main > .page {
   }
 
   .copyright {
-    display: none;
+    margin-bottom: 4em;
   }
 }
