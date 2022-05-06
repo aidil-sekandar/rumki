@@ -76,10 +76,20 @@ a {
   top: 0;
   right: 0;
   background: transparent;
-  z-index: 100;
+  overflow-y: scroll;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .navbar > div {
+  margin: 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,12 +136,6 @@ a {
 
 /*** copyright ***/
 
-@media only screen and (max-width: 320px) {
-  .navbar > div > a {
-    font-size: 1.4rem;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .page {
     padding-right: 1em;
@@ -148,6 +152,7 @@ a {
   }
 
   .navbar > div {
+    margin: 0;
     flex-direction: row;
     justify-content: center;
     gap: 0.5em;
