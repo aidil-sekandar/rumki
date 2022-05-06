@@ -70,6 +70,7 @@ main > .page {
   top: 0;
   right: 0;
   background: transparent;
+  z-index: 100;
 }
 
 .navbar > div {
