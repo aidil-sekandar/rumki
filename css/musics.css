@@ -21,22 +21,10 @@
 
 .music-card {
   position: relative;
-  background-color: #444e57b6;
+  background: linear-gradient(#3c4143, #393b3dc4);
   border-radius: 30px;
   padding: 1.5em;
   box-shadow: 0 0 20px #000;
-  z-index: 10;
-}
-
-.music-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 0 0;
-  background: linear-gradient(145deg, rgba(100, 100, 100, 0.3) 20%, rgba(51, 51, 51, 0.4) 90%);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  border-radius: 30px;
-  z-index: -1;
 }
 
 .music-cover {
