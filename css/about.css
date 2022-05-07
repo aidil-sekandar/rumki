@@ -1,3 +1,8 @@
+.about {
+  background: linear-gradient(rgba(32, 32, 32, 0.6), rgba(32, 32, 32, 0.6)), url(../assets/background.svg);
+  background-attachment: fixed;
+}
+
 .about > h1 {
   text-align: center;
   font-size: 3rem;
